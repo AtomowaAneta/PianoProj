@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Ultra|Monoton" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.2/howler.core.min.js"></script>
+    <script src="js/pianohandler.js"></script>
+    <script src="js/mouseHandler.js"></script>
+    <script src="js/keyboardHandler.js"></script>
+</head>
+<style>
+    body{
+    background-image: url('img/pianoplay.gif');
+    background-size: cover;
+    }
+    .key {
+    width: 50px;
+    }
+</style>
+<body onload="main()">
+<div class="container-fluid nav" style="text-align:center; font-family:Ultra; font-size:500px; background-color:#696969; color:white; border-bottom: 5px solid black ">
+    <h1>  PianoJS </h1>
+</div>
+<div class="container-fluid main">
+    <div class="row">
+        </br>  </br>
+        <div class="col-md-8" >
+            <div style="font-family:Ultra ;color: white; text-align:center;">Volume level:  <span id="volumelvl"></span></div>
+            </br>
+            <div class="keyboardwrapper"style="overflow: auto;" >
+                <div class="btn btn-primary key"  style="background: white; height: 200px; " ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+                <div class="btn btn-primary key" style="background-color: white; height: 200px;" ></div>
+               
+
+
+            </div>
+            <h1 style="font-family:Monoton; color: white; text-align:center;">You pressed: <span id="pressedkey"> </span></h1>
+            <h1 style="color: white" id = "paramters"> </h1>
+        </div>
+        <div class="col-md-4" style="text-align:center; font-family:Monoton">
+          <!--
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="color:white; ">Change piano size</p>
+                    <div class="btn btn-success incr">Increase</div>
+                    <div class="btn btn-warning decr">Decrease</div>
+                </div>
+                <div class="col-md-6">
+                    <p style="color:white; ">Change Octave</p>
+                    <div class="btn btn-success incr">Increase</div>
+                    <div class="btn btn-warning decr">Decrease</div>
+                </div>
+            </div>
+            </br>
+             -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="color:white; ">Mute/Unmute</p>
+                    <button class="btn btn-success" id="mute"><img  src="img/mute.png"></button>
+                </div>
+                <div class="col-md-6">
+                    <p style="color:white; ">Volume up / Volume down</p>
+                    <button class="btn btn-success" id="volumeup" ontouchstart="style.backgroundColor ='red'" ontouchend="style.backgroundColor = ''"><img  src="img/volumeup.png"></button>
+                    <button class="btn btn-success" id="volumedown" ontouchstart="style.backgroundColor ='red'" ontouchend="style.backgroundColor = ''" ><img  src="img/volumedown.png"></button>
+                </div>
+            </div>
+
+            </br>
+        </div>
+    </div>
+</div>
+<footer class="footer navbar-fixed-bottom" style="background-color: #000000;font-family:Ultra; color:white; text-align:center;">PianoJS Stycz DEMO</footer>
+</body>
+<script></script>
+</html>
