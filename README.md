@@ -9,7 +9,7 @@ Simple JS application which simulates one octave piano in web browser.
 #### Functionalities:
 User is able to play on keyboard on in future version by touching keys on touchscreen. He is also able to control volume and to mute and unmute instrument
 
-#### Control
+## Control
 **Keyboard:**
 * From 'q' to '\\' -> piano keys
 * +/- on numlock -> increase/decrase volume level
