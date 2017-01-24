@@ -1,7 +1,7 @@
 # PianoProj
 
 #### Description:
-- ###### Technologies: JavaScript, Howler.js, HTML, CSS
+## Technologies: JavaScript, Howler.js, HTML, CSS
 Simple JS application which simulates one octave piano in web browser. 
 (DEMO VERSION)
 **Scale:** from H1 to H2
