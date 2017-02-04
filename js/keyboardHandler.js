@@ -50,6 +50,12 @@ function keyHandler(create) {
                 document.getElementById("volumedown").style.backgroundColor = '';
             }
         }
+        if (key == 106) {
+            document.getElementById("loop").style.backgroundColor = 'red';
+            for (var i = 0; i < create.length; i++) {
+                create[i].loop(true); 
+        }
+    }
 
         switch (key) {
             case 81:
@@ -118,7 +124,7 @@ function keyHandler(create) {
                 animateKey(12);
                 break;
             default:
-                console.log(null);
+                document.getElementById("pressedkey").innerHTML = "Out of range";
         }
         e.preventDefault();
     }

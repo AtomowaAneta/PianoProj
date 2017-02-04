@@ -9,6 +9,7 @@ function createKeyboard() {
             volume: 1,
         });
     }
+
     return soundArr;
 }
 
